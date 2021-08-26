@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="MiniKi.MainPage"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MiniKi" >
+
+    <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.MatchParent}" 
+          Padding="30,30,30,30">
+        <View.Layout>
+            <LinearLayout LinearAlignment="Top" LinearOrientation="Vertical" CellPadding="10,10"/>
+        </View.Layout>
+        <Button Weight="0.5" Text="메뉴작게보기" PointSize="50"
+                WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                Clicked="SButton_Clicked">
+            
+        </Button>
+        <ImageView/>
+        <Button Weight="0.5" Text="메뉴크게보기" PointSize="100"
+                WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                Clicked="LButton_Clicked">
+            
+        </Button>
+    </View>
+
+</ContentPage>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="MiniKi.MainPage1"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MiniKi" >
+
+    <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+          HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+          BackgroundColor="Blue">
+        <ImageView WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                   HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                   ResourceUrl="*Resource*/images/Banner.png">
+        </ImageView>
+        <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+            <View.Layout>
+                <LinearLayout LinearAlignment="Top" LinearOrientation="Vertical"/>
+            </View.Layout>
+            <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                  HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                  Weight="0.13">
+                <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                    HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+                    <View.Layout>
+                        <LinearLayout LinearOrientation="Horizontal" LinearAlignment="Center" CellPadding="30,30"/>
+                    </View.Layout>
+                    <Button Name="BTN1" 
+                        x:Name="Button1" 
+                        Text="Coffee" 
+                        Size="100,80"
+                  
+                        Clicked="Button_Clicked">
+                    </Button>
+                    <Button Name="BTN2"
+                        x:Name="Button2"
+                        Text="Drink" 
+                        Size="100,80"
+                  
+                        Clicked="Button_Clicked">
+                    </Button>
+                </View>
+
+                <TextLabel Text="Cafeteria"
+                           Position="20,-20"
+                           PixelSize="60"
+                           TextColor="White"
+                           PivotPoint="BottomLeft"
+                           ParentOrigin="BottomLeft"
+                           PositionUsesPivotPoint="True">
+                    <TextLabel.FontStyle>
+                        <PropertyMap>
+                            <KeyValue Key="weight" Value="regular" />
+                        </PropertyMap>
+                    </TextLabel.FontStyle>
+                </TextLabel>
+                <TextLabel x:Name="startover"
+                           Text="StartOver"
+                           Position="-20,-20"
+                           PixelSize="16"
+                           TextColor="White"
+                           TouchEvent="StartButtonTouchEvent"
+                           PivotPoint="BottomRight"
+                           ParentOrigin="BottomRight"
+                           PositionUsesPivotPoint="True">
+                    <TextLabel.Underline>
+                        <PropertyMap>
+                            <KeyValue Key="enable" Value="true" />
+                        </PropertyMap>
+                    </TextLabel.Underline>
+                </TextLabel>
+              
+            </View>
+            <View x:Name="contentArea"
+                       WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       Weight="0.67">
+                <View.Layout>
+                    <LinearLayout LinearAlignment="Top" LinearOrientation="Horizontal"/>
+                </View.Layout>
+            
+            </View>
+            <View x:Name="orderArea"
+                       WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       Weight="0.2"
+                  >
+                <View.Layout>
+                    <LinearLayout LinearAlignment="Top" LinearOrientation="Horizontal"/>
+                </View.Layout>
+
+            </View>
+        </View>
+    </View>
+</ContentPage>

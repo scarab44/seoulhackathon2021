@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="MiniKi.MenuEachPage"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MiniKi" >
+
+    <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+          HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+         
+          >
+        <View.Layout>
+            <LinearLayout LinearAlignment="Top" LinearOrientation="Vertical"/>
+        </View.Layout>
+
+        <View x:Name="tabButtonArea"
+              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+              Weight="0.12" BackgroundColor="#f5f5dc">
+            <View.Layout>
+                <LinearLayout LinearOrientation="Horizontal" LinearAlignment="CenterVertical" CellPadding="30,15"/>
+            </View.Layout>
+
+        </View>
+        <View x:Name="tabHistArea"
+              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+              Weight="0.05" BackgroundColor="#eee6c4">
+            <View.Layout>
+                <LinearLayout LinearOrientation="Horizontal" LinearAlignment="CenterVertical" CellPadding="10,20"/>
+            </View.Layout>
+
+        </View>    
+        <Navigator x:Name="selectNavigator"
+                   WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                   HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                   Weight="0.78"/>
+    </View>
+   
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="MiniKi.OrderListPage"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MiniKi" >
+
+    <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+          HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+          BackgroundColor="White">
+        <!--<ImageView WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                   HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                   ResourceUrl="*Resource*/images/Banner.png">
+        </ImageView>-->
+        <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+            <View.Layout>
+                <LinearLayout LinearAlignment="Top" LinearOrientation="Vertical"/>
+            </View.Layout>
+            <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                  HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                  Weight="0.13"
+                  BackgroundColor="#85c279">
+                <View.Layout>
+                    <LinearLayout LinearAlignment="End" LinearOrientation="Vertical"></LinearLayout>
+                </View.Layout>
+                <TextLabel x:Name="totalPrice"
+                       Text="Total : $ 0.00"
+                       PixelSize="25"
+                       Margin="0,20,8,0"
+                       TextColor="#7474FF">
+                    <TextLabel.Underline>
+                        <PropertyMap>
+                            <KeyValue Key="enable" Value="true" />
+                        </PropertyMap>
+                    </TextLabel.Underline>
+
+                    <TextLabel.FontStyle>
+                        <PropertyMap>
+                            <KeyValue Key="weight" Value="bold" />
+                        </PropertyMap>
+                    </TextLabel.FontStyle>
+                </TextLabel>
+            </View>
+            <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                  HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                  Weight="0.87">
+
+                <View.Layout>
+                    <LinearLayout LinearAlignment="Begin" LinearOrientation="Vertical"></LinearLayout>
+                </View.Layout>
+
+                <View x:Name="container"
+                              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                              HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                              BackgroundColor="#ffa500">
+                </View>
+
+            </View>
+        </View>
+    </View>
+</ContentPage>
