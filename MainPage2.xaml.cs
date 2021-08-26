@@ -229,7 +229,7 @@ namespace MiniKi
 
         private void RightButton_Clicked(object sender, Tizen.NUI.Components.ClickedEventArgs e)
         {
-            //Tizen.Log.Info("MiniKi", "Index ====" + this.index);
+
             if (index + 1 < totalCount)
             {
                 index++;
