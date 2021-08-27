@@ -10,7 +10,7 @@
         <View.Layout>
             <LinearLayout LinearAlignment="Top" LinearOrientation="Vertical" CellPadding="10,10"/>
         </View.Layout>
-        <Button Weight="0.5" Text="메뉴작게보기" PointSize="50" BackgroundColor="White"
+        <Button Weight="0.5" Text="메뉴작게보기" PointSize="50" BackgroundColor="#ffa500" TextColor="White"
                 WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
                 HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
                 Clicked="SButton_Clicked">

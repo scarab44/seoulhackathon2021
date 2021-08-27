@@ -7,12 +7,16 @@ namespace MiniKi
 {
     public partial class OrderListPage : ContentPage
     {
+        private ContentPage _parent;
+        
         public OrderListPage()
         {
             InitializeComponent();
 
             // copied from sample source, 2021/08/21
             BindingContext = OrderManager.Instance;
+
+            //_parent = parent;
 
             totalPrice.SetBinding(TextLabel.TextProperty, "TotalPrice");
 
@@ -56,6 +60,32 @@ namespace MiniKi
                 Weight = 0.9f,
             };
             container.Add(colView);
+        }
+
+        public void setParentPage(ContentPage parentPage)
+        {
+            _parent = parentPage;
+        }
+
+        //private bool ButtonTouchEvent(object source, TouchEventArgs e)
+        //{
+        //    return false;
+        //}
+
+        // [totalPrice] clicked.
+        private bool StartButtonTouchEvent(object source, TouchEventArgs e)
+        {
+            if (e.Touch.GetState(0) == PointStateType.Up)
+            {
+                //@ enable
+                //Navigator.Pop();
+                
+                //_parent.Navigator.Pop();
+                if(OrderManager.Instance.GallerySource.Count>0)
+                    OrderManager.Instance.GallerySource.Clear();
+                _parent.Navigator.Pop();
+            }
+            return false;
         }
     }
 }

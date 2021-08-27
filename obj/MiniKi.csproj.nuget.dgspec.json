@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\Temp\\KioskGcamp\\Nui\\Prj\\MiniKi\\MiniKi.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\mythmyth128\\seoulhackathon2021\\MiniKi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\Temp\\KioskGcamp\\Nui\\Prj\\MiniKi\\MiniKi.csproj": {
+    "C:\\Users\\USER\\source\\repos\\mythmyth128\\seoulhackathon2021\\MiniKi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\Temp\\KioskGcamp\\Nui\\Prj\\MiniKi\\MiniKi.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\mythmyth128\\seoulhackathon2021\\MiniKi.csproj",
         "projectName": "MiniKi",
-        "projectPath": "C:\\Users\\USER\\Desktop\\Temp\\KioskGcamp\\Nui\\Prj\\MiniKi\\MiniKi.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\mythmyth128\\seoulhackathon2021\\MiniKi.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\Temp\\KioskGcamp\\Nui\\Prj\\MiniKi\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\mythmyth128\\seoulhackathon2021\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\USER\\Desktop\\Temp\\KioskGcamp\\Nui\\Prj\\MiniKi\\NuGet.Config",
+          "C:\\Users\\USER\\source\\repos\\mythmyth128\\seoulhackathon2021\\NuGet.Config",
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

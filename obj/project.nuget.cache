@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ja3OzpAOlQd9c61xdM4UrLh3VizEA5PT6KlEF8yOQEcx7JpmIC7K9WlpFdM9IHbo0vrVbkCaigbddoAQD0pICQ==",
+  "dgSpecHash": "YceZKwZyxIPnLuh3odChiTKF8/2UnOi4zSn9aKWxA7sC3KVc6tCJpS675/0gHtsYE+aFJuQhDx8Eg45ABmFVfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\Temp\\KioskGcamp\\Nui\\Prj\\MiniKi\\MiniKi.csproj",
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\mythmyth128\\seoulhackathon2021\\MiniKi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\tizen.net\\9.0.0.16500\\tizen.net.9.0.0.16500.nupkg.sha512",

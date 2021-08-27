@@ -12,6 +12,8 @@ namespace MiniKi
         //List<MenuEachPage> layerList = new List<MenuEachPage>();
         List<MenuEachPage> MenuList = new List<MenuEachPage>();
         MenuEachPage currentPage = null;
+        OrderListPage tempPage = null;
+
         public MainPage1()
         {
             InitializeComponent();
@@ -32,7 +34,12 @@ namespace MiniKi
             currentPage = MenuList[0];
 
             // add orderlist page, 2021/08/21
-            orderArea.Add(new OrderListPage());
+            //orderArea.Add(new OrderListPage(this));
+            tempPage = new OrderListPage();
+            tempPage.setParentPage(this);
+
+            //orderArea.Add(new OrderListPage());
+            orderArea.Add(tempPage);
         }
 
         private void MakeTabControl()
@@ -113,12 +120,16 @@ namespace MiniKi
             }
             contentArea.Add(tableView);
         }
+
+        //startover 버튼 클릭.
         private bool StartButtonTouchEvent(object source, TouchEventArgs e)
         {
+            
             if (e.Touch.GetState(0) == PointStateType.Up)
             {
                 //@ enable
                 Navigator.Pop();
+                OrderManager.Instance.GallerySource.Clear(); // 주문리스트 삭제.
             }
             return false;
         }

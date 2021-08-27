@@ -16,6 +16,7 @@
             <View.Layout>
                 <LinearLayout LinearAlignment="Top" LinearOrientation="Vertical"/>
             </View.Layout>
+           
             <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
                   HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
                   Weight="0.13"
@@ -23,11 +24,13 @@
                 <View.Layout>
                     <LinearLayout LinearAlignment="End" LinearOrientation="Vertical"></LinearLayout>
                 </View.Layout>
+
                 <TextLabel x:Name="totalPrice"
                        Text="Total : $ 0.00"
                        PixelSize="25"
                        Margin="0,20,8,0"
-                       TextColor="#7474FF">
+                       TextColor="#7474FF"
+                        TouchEvent = "StartButtonTouchEvent">
                     <TextLabel.Underline>
                         <PropertyMap>
                             <KeyValue Key="enable" Value="true" />
@@ -40,6 +43,7 @@
                         </PropertyMap>
                     </TextLabel.FontStyle>
                 </TextLabel>
+
             </View>
             <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
                   HeightSpecification="{Static LayoutParamPolicies.MatchParent}"

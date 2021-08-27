@@ -16,6 +16,8 @@ namespace MiniKi
         private void SButton_Clicked(object sender, ClickedEventArgs e)
         {
             Navigator.Push(new MainPage1());
+            //(2021/08/27, clear data ll in order list) 
+            //OrderManager.Instance.GallerySource.Clear();
         }
 
         // 메뉴크게보기

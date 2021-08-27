@@ -18,8 +18,16 @@ namespace MiniKi
             InitializeComponent();
             gradientBG.AddVisual("Linear_Gradient", new MyGradientVisual());
             LoadAllResources();
+
+            //(2021/08/27, clear data ll in order list) 
+            //OrderManager.Instance.GallerySource.Clear();
+
+            OrderListPage tempPage = new OrderListPage();
+            tempPage.setParentPage(this);
+
             // add orderlist page, 2021/08/25
-            orderArea.Add(new OrderListPage());
+            //orderArea.Add(new OrderListPage());
+            orderArea.Add(tempPage);
         }
 
         private void LoadAllResources()
